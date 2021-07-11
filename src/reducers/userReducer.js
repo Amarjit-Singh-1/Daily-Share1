@@ -22,12 +22,12 @@ const userReducer = (state = userInit, action) => {
     case "FOLLOW_USER": {
       const newState = JSON.parse(JSON.stringify(state));
       console.log(action.payload.id);
-      return {};
+      return newState;
     }
     case "UNFOLLOW_USER": {
       const newState = JSON.parse(JSON.stringify(state));
       console.log(action.payload.id);
-      return {};
+      return newState;
     }
     default: {
       return state;
