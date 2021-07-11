@@ -17,13 +17,8 @@ export function SignUp() {
           password
         }
       );
-      const data = await res;
-      console.log(data);
-      return;
-      console.log(res);
       if (res.data.user.username) {
-        const { _id, username } = res.data.user;
-        dispatch(loginUser(username));
+        dispatch(loginUser(res.data.user));
       } else {
         alert("Can't create account 😐");
       }
