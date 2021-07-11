@@ -1,4 +1,4 @@
-const login = {
+export const login = {
   user: {
     followers: [],
     following: [],
@@ -11,7 +11,7 @@ const login = {
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGU5NTY4NjBlYWVlMTA3MDMxMTNiY2UiLCJ1c2VybmFtZSI6ImFiaGlzaGVrIiwiaWF0IjoxNjI1OTE3OTQwfQ.eqAoIBuTqd-TJmQYbNl3wD4WUNb4464xqK5uJEsHe3g"
   }
 };
-const signup = {
+export const signup = {
   user: {
     followers: [],
     following: [],
@@ -32,7 +32,7 @@ body => {
     "id": "60e956860eaee10703113bce"
 }
  */
-const createpost = {
+export const createpost = {
   post: {
     likes: [],
     _id: "60e98a63977061063d57dfdf",
@@ -46,7 +46,7 @@ const createpost = {
   message: "Successfully created post"
 };
 
-const likepost = {
+export const likepost = {
   post: {
     likes: ["60e956860eaee10703113bce"],
     _id: "60e98435fd350c050de11a0c",
@@ -59,7 +59,7 @@ const likepost = {
   }
 };
 
-const unlikepost = {
+export const unlikepost = {
   post: {
     likes: [],
     _id: "60e98435fd350c050de11a0c",
